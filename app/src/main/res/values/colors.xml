@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40a8c4</color>
+    <color name="colorPrimaryDark">#07689f</color>
+    <color name="graylight">#fafafa</color>
+    <color name="colorAccent">#006a71</color>
+
+    <color name="manga">#c70039</color>
+    <color name="manhwa">#f37121</color>
+    <color name="manhua">#111d5e</color>
+</resources>

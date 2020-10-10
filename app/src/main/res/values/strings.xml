@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Moja Komik</string>
+    <string name="title_home">Home</string>
+    <string name="title_new">Terbaru</string>
+    <string name="title_list">List Komik</string>
+    <string name="txtJudul">Judul Manga</string>
+    <string name="txtChapter">Chapter</string>
+    <string name="txtType">Type Manga/Manhwa/Manhua</string>
+    <string name="txtUpload">Tanggal Upload</string>
+    <string name="search_manga">Cari komik disini...</string>
+    <string name="card_type">Manga</string>
+    <string name="card_judul">Judul</string>
+    <string name="card_upload">Upload</string>
+    <string name="row_genre_detail">Slice Of Life</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_genre">List Genre</string>
+    <string name="tab_manhwa">List Manhwa</string>
+    <string name="tab_manhua">List Manhua</string>
+    <string name="title_about">Info</string>
+    <string name="title_about_aplikasi">Moja Komik adalah aplikasi baca komik online GRATIS TERUPDATE yang terdiri dari manga, manhwa dan manhua. Aplikasi ini dibuat untuk orang yang hobi baca komik entah itu manga, manhwa atau manhua, datanya sendiri berasal dari web komiku.co.id. Lalu kenapa namanya mojakomik ? moja itu adalah nama depan dari produk portofolio saya, jadi kedepannya setiap bikin produk portofolio saya akan menamai embel - embel depannya dengan nama moja.</string>
+    <string name="title_about_me">Halo, perkenalkan nama saya Aditya Salman biasa dipanggil Adit. Saya adalah mahasiswa Universitas Amikom Yogyakarta yang saat ini sedang menempuh pendidikan strata 1 Informatika yang saat ini banting stir ke dunia mobile programming.</string>
+    <string name="title_about_moja">Sekilas tentang MojaSoft, moja sendiri terinspirasi karena macOS pertama saya adalah \'Mojave\' dipikir - pikir enak juga disebutnya, jadi dinamain aja deh tiap produk portofolio di dunia mobile programming dengan embel - embel \'Moja\'.</string>
+    <string name="show_less">Tampilkan Lebih Banyak</string>
+    <string name="show_more">Tampilkan Lebih Sedikit</string>
+    <string name="title_genre">Genre ex: Action</string>
+    <string name="title_detail_chapter">Chapter Detail X.XX</string>
+</resources>

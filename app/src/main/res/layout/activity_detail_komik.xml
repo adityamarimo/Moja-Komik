@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailKomikActivity">
+
+    <ImageView
+        android:id="@+id/imgDetailThumb"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        tools:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/bg_overlay"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/DetailJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="12dp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:shadowColor="@android:color/black"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Tsundere Akuyaku Reijou Liselotte to Jikkyou no Endo-kun to Kaisetsu no Kobayashi-san Kobayashi" />
+
+            <TextView
+                android:id="@+id/DetailAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="2dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:shadowColor="@android:color/black"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="Enoshima Suzu  &amp; Sakakiri Enoshima Suzu &amp; Sakakiri" />
+
+            <TextView
+                android:id="@+id/DetailSinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:gravity="fill_vertical"
+                android:maxLines="3"
+                android:onClick="TestChapter"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="\t『Dia selalu memasang wajah pemarah itu meskipun sebenarnya dia tidak sebal itu! Oh, kenapa dia tidak jujur saja pada dirinya sendiri ... !? 』\n\nAfter Dia memang tsundere? Ketika tingkat rasa malunya melebihi batas tertentu, dia akan meledak menjadi marah. Namun, poin yang dia tekan di bawah permukaan adalah bahwa dia tidak akan keberatan hal semacam itu jika berada di tempat yang kurang umum. 』\n\nSaat Endo-kun dengan penuh semangat bereaksi terhadap kejenakaan Lady Liselotte, penjahat dari permainan otome, Kobayashi-san memberikan uraian yang melelahkan dari perilaku tsundere-nya.\n\nTiba-tiba, satu orang bisa mendengar suara mereka; Tunangan Liselotte, Pangeran Siegward.\n\nDi situlah cerita ini dimulai." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgDetail"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:elevation="1dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/imgDetailPoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:src="@android:color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDetailThumb"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/DetailType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Type : Manga"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/DetailStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Status : Ongoing"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_genre_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgDetail"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        tools:listitem="@layout/item_row_genre" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rv_genre_detail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chapter_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_row_chapter" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
